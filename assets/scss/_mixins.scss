@@ -8,8 +8,8 @@
 }
 
 // Largura da tela do maior para o menor
-@mixin width($width) {
-	@media (max-width: $width) {
+@mixin maxwidth($maxwidth) {
+	@media (max-width: $maxwidth) {
 		@content;
 	}
 }
