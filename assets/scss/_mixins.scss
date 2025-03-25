@@ -7,9 +7,16 @@
 	gap: $gap;
 }
 
-// Responsive
+// Largura da tela do maior para o menor
 @mixin width($width) {
 	@media (max-width: $width) {
+		@content;
+	}
+}
+
+// Largura da tela do menor para o maior
+@mixin minwidth($width) {
+	@media (min-width: $width) {
 		@content;
 	}
 }
