@@ -15,8 +15,8 @@
 }
 
 // Largura da tela do menor para o maior
-@mixin minwidth($width) {
-	@media (min-width: $width) {
+@mixin minwidth($minwidth) {
+	@media (min-width: $minwidth) {
 		@content;
 	}
 }
